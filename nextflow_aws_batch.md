@@ -60,9 +60,11 @@ https://anaconda.org/conda-forge/awscli
 
 ### Export your key and default AWS region to your shell environment
 
+```
 export AWS_ACCESS_KEY_ID={Your access key id} \
 export AWS_SECRET_ACCESS_KEY={Your secret key} \
 export AWS_DEFAULT_REGION=us-east-1
+```
 
 ### Additional doco optional
 
@@ -87,8 +89,10 @@ ParameterKey=CreatePrivateSubnets,ParameterValue=false
 
 Run the following commands to retrieve the identifiers for your VPC and the public subnets
 
+```
 aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep vpc-
 aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet 
+```
 
 ### Configure AWS batch environment
 
