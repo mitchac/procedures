@@ -37,3 +37,13 @@ Select option 'Upload a template file'.
 Click on 'Choose file'.
 
 Select the template file you downloaded previously in the file selection popup. 
+
+Click the Next button
+
+Enter a username and password and click Next
+
+Click Next
+
+At the bottom of the page tick any checkboxes in the 'Capabilities' section to enable the creation of appropriate resources and click 'Create stack' button. 
+
+Make a note of the 
