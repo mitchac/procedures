@@ -20,6 +20,8 @@ Go to https://console.aws.amazon.com/billing/ and select 'Payment methods' in th
 
 Complete the process to add a credit card. 
 
+### Add a non root user to your account
 
+It is recommended to create a non-root user account for day to day use of AWS in order to avoid credentials for your root account falling into the wrong hands.  
 
 
