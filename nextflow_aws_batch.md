@@ -96,7 +96,7 @@ aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet
 
 ### Configure AWS batch environment
 
-Replace the VPC and public subnet ids in the following code with the values you captured previously then run the following command in your terminal
+Replace the VPC and public subnet ids in the following code with the values you captured previously then run the command in your terminal
 
 ```
 aws cloudformation create-stack \
