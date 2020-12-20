@@ -46,4 +46,22 @@ Click Next
 
 At the bottom of the page tick any checkboxes in the 'Capabilities' section to enable the creation of appropriate resources and click 'Create stack' button. 
 
-Make a note of the 
+Make a note of the username, password and the security key details.
+
+### Install the AWS CLI tool to your linux / OSX terminal
+
+Install this either using the instructions provided by AWS at the following link.
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+
+Or using Conda per the following link
+
+https://anaconda.org/conda-forge/awscli
+
+### Export your key and default AWS region to your terminal 
+
+export AWS_ACCESS_KEY_ID={Your access key id}
+export AWS_SECRET_ACCESS_KEY={Your secret key}
+export AWS_DEFAULT_REGION=us-east-1
+
+
