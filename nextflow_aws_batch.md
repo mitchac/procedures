@@ -64,4 +64,28 @@ export AWS_ACCESS_KEY_ID={Your access key id} \
 export AWS_SECRET_ACCESS_KEY={Your secret key} \
 export AWS_DEFAULT_REGION=us-east-1
 
+### Additional doco optional
+
+NB from this point, this procedure will track closely to the information provided in the following link. 
+
+https://docs.opendata.aws/genomics-workflows/orchestration/nextflow/nextflow-overview/
+
+For additional clarification of the purpose of these steps it is recommended to consult this link. 
+
+### Create VPC
+
+Run the following command in your terminal
+
+```
+aws cloudformation create-stack \
+--stack-name vpcstack --template-url  https://aws-quickstart.s3.amazonaws.com/quickstart-aws-vpc/templates/aws-vpc.template \
+--parameters \
+ParameterKey=AvailabilityZones,ParameterValue=us-east-1a\\,us-east-1b \
+ParameterKey=CreatePrivateSubnets,ParameterValue=false
+```
+
+
+
+
+
 
