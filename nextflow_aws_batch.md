@@ -6,7 +6,7 @@ The goal of this procedure is to set up an AWS batch environment into which Next
 
 ### Create AWS administrator account
 Go to https://aws.amazon.com/ and click on the 'Create an AWS account' button. 
-Complete the form wizard to create an account. 
+Complete the process to create an account. 
 It is recommended to add 2 factor authentication as part of this process. 
 
 ### Add a credit card to your account
