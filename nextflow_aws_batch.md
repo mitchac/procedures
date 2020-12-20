@@ -96,7 +96,10 @@ aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet
 
 ### Create S3 bucket
 
-
+Run the following command in your terminal
+```
+aws s3api create-bucket --bucket my-bucket --region us-east-1
+```
 
 
 ### Configure AWS batch environment
