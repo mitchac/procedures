@@ -137,6 +137,17 @@ ParameterKey=Namespace,ParameterValue=nfres \
 --capabilities CAPABILITY_IAM
 ```
 
+### Run a test workflow to test your AWS batch environment
+
+Run the following command in your terminal
+```
+aws batch submit-job \
+--job-name SRR12118866 \
+--job-queue default-gwfcore2 \
+--job-definition nextflow-nfres \
+--container-overrides command=mitchac/nextflow-ascp
+```
+
 
 ### notes
 make sure do all in single zone 
