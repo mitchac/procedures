@@ -85,8 +85,28 @@ ParameterKey=AvailabilityZones,ParameterValue=us-east-1a\\,us-east-1b \
 ParameterKey=CreatePrivateSubnets,ParameterValue=false
 ```
 
+Run the following commands to retrieve the identifiers for your VPC and the public subnets
 
+aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep vpc-
+aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet 
 
+### Configure AWS batch environment
 
+Run the following command in your terminal
+
+```
+aws cloudformation create-stack \
+--stack-name gwfcoreudp \
+--template-url  https://emriuom-cf.s3.amazonaws.com/test/templates/gwfcore/gwfcore-root.template.yaml \
+--parameters \
+ParameterKey=VpcId,ParameterValue={Your VpcId} \
+ParameterKey=SubnetIds,ParameterValue={Your public subnet 1}\\,{Your public subnet 2} \
+ParameterKey=S3BucketName,ParameterValue=emriuom \
+ParameterKey=ExistingBucket,ParameterValue=true \
+ParameterKey=ArtifactBucketName,ParameterValue=emriuom-cf \
+ParameterKey=ArtifactBucketPrefix,ParameterValue=test/artifacts \
+ParameterKey=TemplateRootUrl,ParameterValue=https://emriuom-cf.s3.amazonaws.com/test/templates \
+--capabilities CAPABILITY_IAM
+```
 
 
