@@ -96,7 +96,7 @@ Replace the VPC and public subnet ids in the following code with the values you 
 
 ```
 aws cloudformation create-stack \
---stack-name gwfcoreudp \
+--stack-name gwfcore \
 --template-url  https://emriuom-cf.s3.amazonaws.com/test/templates/gwfcore/gwfcore-root.template.yaml \
 --parameters \
 ParameterKey=VpcId,ParameterValue={Your VpcId} \
