@@ -120,7 +120,19 @@ ParameterKey=TemplateRootUrl,ParameterValue=https://emriuom-cf.s3.amazonaws.com/
 --capabilities CAPABILITY_IAM
 ```
 
-### Configure Nextflow customisations to AWS batch environment
+### Configure Nextflow-specific changes to AWS batch environment
+
+Run the following command in your terminal
+```
+aws cloudformation create-stack \
+--stack-name nextflow-resources \
+--template-url  https://aws-genomics-workflows.s3.amazonaws.com/latest/templates/nextflow/nextflow-resources.template.yaml \
+--parameters \
+ParameterKey=GWFCoreNamespace,ParameterValue=gwfcore \
+ParameterKey=TemplateRootUrl,ParameterValue=https://aws-genomics-workflows.s3.amazonaws.com/v3.0.2/templates \
+ParameterKey=Namespace,ParameterValue=nfres \
+--capabilities CAPABILITY_IAM
+```
 
 
 ### notes
