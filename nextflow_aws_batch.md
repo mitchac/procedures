@@ -94,9 +94,16 @@ aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep vpc-
 aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet 
 ```
 
+### Create S3 bucket
+
+
+
+
 ### Configure AWS batch environment
 
-Replace the VPC and public subnet ids in the following code with the values you captured previously then run the command in your terminal
+Replace the VPC and public subnet ids in the following code with the values you captured previously.
+Replace the s3 bucket name with your bucket name.
+Then run the command in your terminal. 
 
 ```
 aws cloudformation create-stack \
@@ -105,7 +112,7 @@ aws cloudformation create-stack \
 --parameters \
 ParameterKey=VpcId,ParameterValue={Your VpcId} \
 ParameterKey=SubnetIds,ParameterValue={Your public subnet 1}\\,{Your public subnet 2} \
-ParameterKey=S3BucketName,ParameterValue=emriuom \
+ParameterKey=S3BucketName,ParameterValue={Your s3 bucket} \
 ParameterKey=ExistingBucket,ParameterValue=true \
 ParameterKey=ArtifactBucketName,ParameterValue=emriuom-cf \
 ParameterKey=ArtifactBucketPrefix,ParameterValue=test/artifacts \
@@ -113,4 +120,8 @@ ParameterKey=TemplateRootUrl,ParameterValue=https://emriuom-cf.s3.amazonaws.com/
 --capabilities CAPABILITY_IAM
 ```
 
+### Configure Nextflow customisations to AWS batch environment
 
+
+### notes
+make sure do all in single zone 
