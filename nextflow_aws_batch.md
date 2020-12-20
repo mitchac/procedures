@@ -148,6 +148,15 @@ aws batch submit-job \
 --container-overrides command=mitchac/nextflow-ascp
 ```
 
+You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
+
+https://console.aws.amazon.com/batch/v2/home?region=us-east-1#dashboard
+
+After a minute or two, real-time logging for your workflow should be available at the following link. 
+
+https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logsV2:log-groups/log-group/$252Faws$252Fbatch$252Fjob
+
+
 
 ### notes
 make sure do all in single zone 
