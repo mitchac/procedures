@@ -26,7 +26,7 @@ It is recommended to create a non-root user account for day to day use of AWS in
 
 Download the following template file to your computer. This file will automate the creation of your non-root user.
 
-https://github.com/mitchac/cloudformation/blob/a486321a5f49bf9972bd16f9372b5f274b23c3be/default-user.template.yaml
+https://github.com/mitchac/cloudformation/blob/main/default-user.template.yaml
 
 Go to https://console.aws.amazon.com/cloudformation
 
