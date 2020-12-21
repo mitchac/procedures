@@ -143,7 +143,7 @@ Run the following command in your terminal
 ```
 aws batch submit-job \
 --job-name SRR12118866 \
---job-queue default-gwfcore2 \
+--job-queue default-gwfcore \
 --job-definition nextflow-nfres \
 --container-overrides command=mitchac/nextflow-ascp
 ```
