@@ -21,7 +21,7 @@ Then run the command in your terminal.
 ```
 aws cloudformation create-stack \
 --stack-name gwfcore \
---template-url  https://emriuom-cf.s3.amazonaws.com/test/templates/gwfcore/gwfcore-root.template.yaml \
+--template-url  https://emriuom-cloudformation.s3.amazonaws.com/test/templates/gwfcore/gwfcore-root.template.yaml \
 --parameters \
 ParameterKey=VpcId,ParameterValue={Your VpcId} \
 ParameterKey=SubnetIds,ParameterValue={Your public subnet 1}\\,{Your public subnet 2} \
