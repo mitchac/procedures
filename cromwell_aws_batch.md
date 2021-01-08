@@ -68,33 +68,34 @@ Copy the ssh command from this section and run it in your terminal. This command
 ```
 ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
 ```
-
+```
 touch hello.wdl
-
-copy from..
+```
+copy file contents from..
 https://raw.githubusercontent.com/mitchac/wdlhelloworld/d250bdb9fe651d14813ce0de700f3e3624a2446e/hello.wdl
-
+```
 touch hello.json
+```
 {
     "hello.SRA_accession_num": "SRR12118866"
 }
 
-run ..
+run the workflow with the following command..
 
+```
 curl -X POST "http://localhost:8000/api/workflows/v1" \
 -H  "accept: application/json" \
 -F "workflowSource=@hello.wdl" \
 -F "workflowInputs=@hello.json"
-
+```
 You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
 
 https://console.aws.amazon.com/batch/v2/home?region=us-east-1#dashboard
 
-After a minute or two, real-time logging for your workflow should be available at the following link. 
+nb nothing is logged to cloudwatch in this particular workflow.
 
-https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logsV2:log-groups/log-group/$252Faws$252Fbatch$252Fjob
-
-
+after a few minute you should see execution outputs in 
+https://s3.console.aws.amazon.com/s3/buckets/emriuom?region=us-east-1&prefix=cromwell-execution/hello/&showversions=false
 
 ### notes
 make sure do all in single zone 
