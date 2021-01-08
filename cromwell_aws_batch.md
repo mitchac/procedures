@@ -14,7 +14,7 @@ https://github.com/mitchac/procedures/blob/9fa1867278556eaed1edf8a5eebc6a2fd71e9
 
 ### Additional doco optional
 
-NB From this point on, this procedure will follow closely (with a few key differences) to the information provided at the following link. 
+The next few steps will follow closely (with a few key differences) the information provided at the following link. 
 
 https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-overview/
 
