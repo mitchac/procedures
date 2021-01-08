@@ -76,6 +76,8 @@ https://raw.githubusercontent.com/mitchac/wdlhelloworld/d250bdb9fe651d14813ce0de
 ```
 touch hello.json
 ```
+copy file contents below..
+
 {
     "hello.SRA_accession_num": "SRR12118866"
 }
