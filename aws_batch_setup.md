@@ -1,3 +1,7 @@
+### Configure AWS batch environment
+
+nb in the following commands I have used S3 bucket names emriuom-workflow and emriuom-cloudformation. You should create buckets with different names and amend the commands accordingly. 
+
 ### Create S3 bucket for workflow outputs
 
 Run the following command in your terminal
