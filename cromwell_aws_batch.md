@@ -47,17 +47,7 @@ https://github.com/mitchac/procedures/blob/83cc8107f0fb44726ca00c248a2f61a10f256
 
 ### Configure Cromwell-specific changes to AWS batch environment
 
-Run the following command in your terminal
-```
-aws cloudformation create-stack \
---stack-name nextflow-resources \
---template-url  https://aws-genomics-workflows.s3.amazonaws.com/latest/templates/nextflow/nextflow-resources.template.yaml \
---parameters \
-ParameterKey=GWFCoreNamespace,ParameterValue=gwfcore \
-ParameterKey=TemplateRootUrl,ParameterValue=https://aws-genomics-workflows.s3.amazonaws.com/v3.0.2/templates \
-ParameterKey=Namespace,ParameterValue=nfres \
---capabilities CAPABILITY_IAM
-```
+
 
 ### Run a test workflow to test your AWS batch environment
 
