@@ -49,16 +49,28 @@ https://github.com/mitchac/procedures/blob/83cc8107f0fb44726ca00c248a2f61a10f256
 
 https://github.com/mitchac/procedures/blob/76d227fd9cb99948f9851576b2271e099d673727/install_cromwell.md
 
-### Run a test workflow to test your AWS batch environment
+### Run a test workflow
 
-Run the following command in your terminal
+Go to https://console.aws.amazon.com/cloudformation/home?region=us-east-1
+
+Click on your completed cromwell stack in the list.
+
+Click on resources, scroll through the list and click on 'EC2Instance' to be taken to the EC2 console.
+
+Click on the instance id
+
+Click on the connect tab
+
+Click on the SSH client tab 
+
+Copy the ssh command from this section. This should look like..
+
 ```
-aws batch submit-job \
---job-name SRR12118866 \
---job-queue default-gwfcore \
---job-definition nextflow-nfres \
---container-overrides command=mitchac/nextflow-ascp
+ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
 ```
+Run this command in your terminal
+
+
 
 You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
 
