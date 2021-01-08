@@ -42,7 +42,7 @@ aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet
 
 ### Configure AWS batch environment
 
-https://github.com/mitchac/procedures/commit/83cc8107f0fb44726ca00c248a2f61a10f25640f
+https://github.com/mitchac/procedures/blob/83cc8107f0fb44726ca00c248a2f61a10f25640f/aws_batch_setup.md
 
 
 ### Configure Nextflow-specific changes to AWS batch environment
