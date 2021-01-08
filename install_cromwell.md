@@ -12,11 +12,15 @@ aws ec2 create-key-pair --key-name MyKeyPair
 Run the following command in your terminal
 ```
 aws cloudformation create-stack \
---stack-name nextflow-resources \
---template-url  https://aws-genomics-workflows.s3.amazonaws.com/latest/templates/nextflow/nextflow-resources.template.yaml \
+--stack-name cromwell \
+--template-url  https://aws-genomics-workflows.s3.amazonaws.com/latest/templates/cromwell/cromwell-resources.template.yaml \
 --parameters \
+ParameterKey=Namespace,ParameterValue=cromwell \
 ParameterKey=GWFCoreNamespace,ParameterValue=gwfcore \
-ParameterKey=TemplateRootUrl,ParameterValue=https://aws-genomics-workflows.s3.amazonaws.com/v3.0.2/templates \
-ParameterKey=Namespace,ParameterValue=nfres \
+ParameterKey=VpcId,ParameterValue={Your VpcId} \
+ParameterKey=ServerSubnetID,ParameterValue={Your public subnet 1} \
+ParameterKey=DBSubnetIDs,ParameterValue={Your public subnet 1}\\,{Your public subnet 2} \
+ParameterKey=KeyName,ParameterValue={Your ssh key name} \
+ParameterKey=DBPassword,ParameterValue='{Create a db password}' \
 --capabilities CAPABILITY_IAM
 ```
