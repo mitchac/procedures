@@ -2,7 +2,7 @@
 
 Run the following command in your terminal
 ```
-aws s3api create-bucket --bucket emriuom --region us-east-1
+aws s3api create-bucket --bucket emriuom-workflow --region us-east-1
 ```
 
 ### Create public S3 bucket from which the cloudformation template files can be accessed
@@ -31,7 +31,7 @@ aws cloudformation create-stack \
 --parameters \
 ParameterKey=VpcId,ParameterValue={Your VpcId} \
 ParameterKey=SubnetIds,ParameterValue={Your public subnet 1}\\,{Your public subnet 2} \
-ParameterKey=S3BucketName,ParameterValue={Your s3 bucket} \
+ParameterKey=S3BucketName,ParameterValue=emriuom-workflow \
 ParameterKey=ExistingBucket,ParameterValue=true \
 ParameterKey=ArtifactBucketName,ParameterValue=emriuom-cloudformation \
 ParameterKey=ArtifactBucketPrefix,ParameterValue=test/artifacts \
