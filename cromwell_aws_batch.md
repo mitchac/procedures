@@ -72,7 +72,7 @@ ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
 touch hello.wdl
 ```
 copy file contents from..
-https://raw.githubusercontent.com/mitchac/wdlhelloworld/d250bdb9fe651d14813ce0de700f3e3624a2446e/hello.wdl
+https://github.com/mitchac/wdlhelloworld/blob/b0a13f9ac8266ea3528fdca548a8923f18c533b1/hello.wdl
 ```
 touch hello.json
 ```
