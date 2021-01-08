@@ -3,6 +3,8 @@
 Run the following command in your terminal
 ```
 aws s3api create-bucket --bucket emriuom-cloudformation --region us-east-1 --acl public-read
+cd aws-genomics-workflows
+bash _scripts/deploy.sh --deploy-region us-east-1 --asset-bucket s3://emriuom-cloudformation gwf
 ```
 
 
