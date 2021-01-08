@@ -40,15 +40,9 @@ aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep vpc-
 aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet 
 ```
 
-### Create S3 bucket
-
-Run the following command in your terminal
-```
-aws s3api create-bucket --bucket my-bucket --region us-east-1
-```
-
-
 ### Configure AWS batch environment
+
+https://github.com/mitchac/procedures/commit/83cc8107f0fb44726ca00c248a2f61a10f25640f
 
 
 ### Configure Nextflow-specific changes to AWS batch environment
