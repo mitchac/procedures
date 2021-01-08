@@ -16,9 +16,9 @@ https://github.com/mitchac/procedures/blob/9fa1867278556eaed1edf8a5eebc6a2fd71e9
 
 NB from this point, this procedure will track closely to the information provided in the following link. 
 
-https://docs.opendata.aws/genomics-workflows/orchestration/nextflow/nextflow-overview/
+https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-overview/
 
-For additional clarification of the purpose of these steps it is recommended to consult this link. 
+For additional clarification of the purpose of the following steps it is recommended to consult this link. 
 
 ### Create VPC
 
