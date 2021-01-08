@@ -63,14 +63,28 @@ Click on the connect tab
 
 Click on the SSH client tab 
 
-Copy the ssh command from this section. This should look like..
+Copy the ssh command from this section and run it in your terminal. This command should look like..
 
 ```
 ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
 ```
-Run this command in your terminal
 
+touch hello.wdl
 
+copy from..
+https://raw.githubusercontent.com/mitchac/wdlhelloworld/d250bdb9fe651d14813ce0de700f3e3624a2446e/hello.wdl
+
+touch hello.json
+{
+    "hello.SRA_accession_num": "SRR12118866"
+}
+
+run ..
+
+curl -X POST "http://localhost:8000/api/workflows/v1" \
+-H  "accept: application/json" \
+-F "workflowSource=@hello.wdl" \
+-F "workflowInputs=@hello.json"
 
 You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
 
