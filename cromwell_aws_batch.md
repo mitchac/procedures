@@ -1,6 +1,6 @@
 
 ### Goal 
-The goal of this procedure is to set up an AWS batch environment into which Nextflow jobs can be launched. 
+The goal of this procedure is to set up an AWS batch environment into which wdl workflows can be launched with Cromwell. 
 
 ### Steps
 
