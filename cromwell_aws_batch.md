@@ -94,10 +94,10 @@ You can monitor the progress of your job by going to the AWS batch dashboard at 
 
 https://console.aws.amazon.com/batch/v2/home?region=us-east-1#dashboard
 
-nb nothing is logged to cloudwatch in this particular workflow.
-
 after a few minute you should see execution outputs in 
 https://s3.console.aws.amazon.com/s3/buckets/emriuom?region=us-east-1&prefix=cromwell-execution/hello/&showversions=false
+
+nb nothing is logged to cloudwatch in this particular workflow.
 
 ### notes
 make sure do all in single zone 
