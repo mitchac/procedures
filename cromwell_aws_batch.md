@@ -1,6 +1,6 @@
 
 ### Goal 
-The goal of this procedure is to set up an AWS batch environment into which wdl workflows can be launched with Cromwell. 
+The goal of this procedure is to set up an AWS batch environment in which wdl workflows can be launched with Cromwell. 
 
 ### Steps
 
