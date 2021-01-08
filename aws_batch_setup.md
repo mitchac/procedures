@@ -8,6 +8,10 @@ aws s3api create-bucket --bucket emriuom-cloudformation --region us-east-1 --acl
 
 ### Configure AWS batch environment
 
+```
+git clone https://github.com/mitchac/aws-genomics-workflows.git
+```
+
 Replace the VPC and public subnet ids in the following code with the values you captured previously.
 Replace the s3 bucket name with your bucket name.
 Then run the command in your terminal. 
