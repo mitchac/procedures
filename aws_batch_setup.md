@@ -2,7 +2,7 @@
 
 Run the following command in your terminal
 ```
-aws s3api create-bucket --bucket emriuom- --region us-east-1
+aws s3api create-bucket --bucket emriuom --region us-east-1
 ```
 
 ### Create public S3 bucket from which the cloudformation template files can be accessed
