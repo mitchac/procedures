@@ -45,7 +45,7 @@ aws cloudformation describe-stack-resources --stack-name vpcstack2 | grep subnet
 https://github.com/mitchac/procedures/blob/83cc8107f0fb44726ca00c248a2f61a10f25640f/aws_batch_setup.md
 
 
-### Configure Nextflow-specific changes to AWS batch environment
+### Configure Cromwell-specific changes to AWS batch environment
 
 Run the following command in your terminal
 ```
