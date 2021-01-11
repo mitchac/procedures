@@ -21,7 +21,7 @@ aws s3api create-bucket --bucket emriuom-cloudformation --region us-east-1 --acl
 ```
 git clone https://github.com/mitchac/aws-genomics-workflows.git
 cd aws-genomics-workflows
-bash _scripts/deploy.sh --deploy-region us-east-1 --asset-bucket s3://emriuom-cloudformation test
+bash _scripts/deploy.sh --deploy-region us-east-1 --asset-profile default --asset-bucket s3://emriuom-cloudformation test
 ```
 
 Replace the VPC and public subnet ids in the following code with the values you captured previously.
