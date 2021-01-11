@@ -10,7 +10,7 @@ https://github.com/mitchac/procedures/blob/0a0d5c6162354f74d44f53b5de74604fdc1c1
 
 ### Install the AWS CLI tool to your linux / OSX terminal
 
-https://github.com/mitchac/procedures/blob/9fa1867278556eaed1edf8a5eebc6a2fd71e9ec0/aws_cli_setup.md
+https://github.com/mitchac/procedures/blob/3e29da3ae234a7f755a4bd9ea313e970e03d9b51/aws_cli_setup.md
 
 ### Additional doco optional
 
