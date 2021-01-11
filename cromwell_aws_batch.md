@@ -70,6 +70,8 @@ ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
 ```
 Get test wdl script 
 ```
+sudo yum update -y
+sudo yum install git -y
 git clone https://github.com/mitchac/wdlhelloworld.git
 cd wdlhelloworld
 ```
