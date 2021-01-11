@@ -42,7 +42,7 @@ aws cloudformation describe-stack-resources --stack-name vpcstack | grep subnet
 
 ### Configure AWS batch environment
 
-https://github.com/mitchac/procedures/blob/1ac68a64e694cbc8187c466c807dff5f96e94c4a/aws_batch_setup.md
+https://github.com/mitchac/procedures/blob/da3d7dda3b315a97e80a1fd2fab59fbcff3eb1ee/aws_batch_setup.md
 
 
 ### Configure Cromwell-specific changes to AWS batch environment
