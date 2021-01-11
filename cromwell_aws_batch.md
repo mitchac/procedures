@@ -68,20 +68,11 @@ Copy the ssh command from this section and run it in your terminal. This command
 ```
 ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
 ```
+Get test wdl script 
 ```
-touch hello.wdl
+git clone https://github.com/mitchac/wdlhelloworld.git
+cd wdlhelloworld
 ```
-copy file contents from..
-https://github.com/mitchac/wdlhelloworld/blob/b0a13f9ac8266ea3528fdca548a8923f18c533b1/hello.wdl
-```
-touch hello.json
-```
-copy file contents below..
-
-{
-    "hello.SRA_accession_num": "SRR12118866"
-}
-
 run the workflow with the following command..
 
 ```
