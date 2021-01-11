@@ -8,10 +8,22 @@ Or using Conda per the following link
 
 https://anaconda.org/conda-forge/awscli
 
-### Export your key and default AWS region to your shell environment
+### Create an aws config 
 
 ```
-export AWS_ACCESS_KEY_ID={Your access key id} \
-export AWS_SECRET_ACCESS_KEY={Your secret key} \
-export AWS_DEFAULT_REGION=us-east-1
+touch ~/.aws/credentials
+```
+add the following lines to this file 
+```
+[default]
+aws_access_key_id={Your access key id}
+aws_secret_access_key={Your secret key}
+```
+```
+touch ~/.aws/config
+```
+add the following lines to this file 
+```
+[default]
+region=us-east-1
 ```
