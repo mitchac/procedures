@@ -6,7 +6,7 @@ The goal of this procedure is to set up an AWS batch environment in which wdl wo
 
 ### Set up new AWS account
 
-https://github.com/mitchac/procedures/blob/0a0d5c6162354f74d44f53b5de74604fdc1c1754/aws_new_account.md
+https://github.com/mitchac/procedures/blob/a5f08d323f8c28baab02c83d7dd556d730d3aace/aws_new_account.md
 
 ### Install the AWS CLI tool to your linux / OSX terminal
 
