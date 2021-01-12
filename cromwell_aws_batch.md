@@ -74,6 +74,7 @@ Get test wdl script
 sudo yum update -y
 sudo yum install git -y
 git clone https://github.com/mitchac/wdlhelloworld.git
+git reset cbc0d4c --hard
 ```
 run the workflow with the following command..
 ```
