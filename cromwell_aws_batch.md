@@ -36,8 +36,9 @@ ParameterKey=CreatePrivateSubnets,ParameterValue=false
 Run the following commands to retrieve the identifiers for your VPC and the public subnets
 
 ```
-aws cloudformation describe-stack-resources --stack-name vpcstack | grep vpc-
-aws cloudformation describe-stack-resources --stack-name vpcstack | grep subnet 
+aws cloudformation describe-stacks --stack-name vpcstack --query "Stacks[0].Outputs[?OutputKey=='VPCID'].OutputValue" --output text
+aws cloudformation describe-stacks --stack-name vpcstack --query "Stacks[0].Outputs[?OutputKey=='PublicSubnet1ID'].OutputValue" --output text
+aws cloudformation describe-stacks --stack-name vpcstack --query "Stacks[0].Outputs[?OutputKey=='PublicSubnet2ID'].OutputValue" --output text
 ```
 
 ### Configure AWS batch environment
