@@ -80,7 +80,8 @@ run the workflow with the following command..
 curl -X POST "http://localhost:8000/api/workflows/v1" \
 -H  "accept: application/json" \
 -F "workflowSource=@wdlhelloworld/hello.wdl" \
--F "workflowInputs=@wdlhelloworld/hello.json"
+-F "workflowInputs=@wdlhelloworld/hello.json" \
+-F "workflowOptions=@options.json"
 ```
 You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
 
