@@ -45,7 +45,7 @@ aws cloudformation create-stack \
 --parameters \
 ParameterKey=VpcId,ParameterValue=$AWS_VPC_ID \
 ParameterKey=SubnetIds,ParameterValue=$AWS_VPC_SUBNET1_ID\\,$AWS_VPC_SUBNET1_ID \
-ParameterKey=S3BucketName,ParameterValue=$AWS-GWFCORE-S3-BUCKET \
+ParameterKey=S3BucketName,ParameterValue=$AWS_GWFCORE_S3_BUCKET \
 ParameterKey=ExistingBucket,ParameterValue=true \
 ParameterKey=ArtifactBucketName,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET \
 ParameterKey=ArtifactBucketPrefix,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET_PREFIX \
