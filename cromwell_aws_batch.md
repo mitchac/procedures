@@ -43,7 +43,7 @@ export AWSSUBNET2ID=$(aws cloudformation describe-stacks --stack-name vpcstack -
 
 ### Configure AWS batch environment
 
-https://github.com/mitchac/procedures/blob/da3d7dda3b315a97e80a1fd2fab59fbcff3eb1ee/aws_batch_setup.md
+https://github.com/mitchac/procedures/blob/2609154bf41b605c52e63dadcd2603666820fd3d/aws_batch_setup.md
 
 
 ### Configure Cromwell-specific changes to AWS batch environment
