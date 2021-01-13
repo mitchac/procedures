@@ -30,7 +30,7 @@ https://github.com/mitchac/procedures/blob/2609154bf41b605c52e63dadcd2603666820f
 
 ### Configure Cromwell-specific changes to AWS batch environment
 
-https://github.com/mitchac/procedures/blob/5fc27ced1567cd74cc402478bdaaa862faf97c86/install_cromwell.md
+https://github.com/mitchac/procedures/blob/036a3d7a6c98d96c5787f27d0692cd8817a2165d/install_cromwell.md
 
 ### Run a test workflow
 
