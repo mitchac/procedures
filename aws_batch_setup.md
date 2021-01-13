@@ -40,15 +40,15 @@ Run the following command in your terminal.
 
 ```
 aws cloudformation create-stack \
---stack-name ${AWS_GWFCORE_STACKNAME} \
---template-url ${AWS_GWFCORE_TEMPLATE_URL}  \
+--stack-name $AWS_GWFCORE_STACKNAME \
+--template-url $AWS_GWFCORE_TEMPLATE_URL  \
 --parameters \
-ParameterKey=VpcId,ParameterValue=${AWS_VPC_ID} \
-ParameterKey=SubnetIds,ParameterValue=${AWS_VPC_SUBNET1_ID}\\,${AWS_VPC_SUBNET1_ID} \
-ParameterKey=S3BucketName,ParameterValue=${AWS-GWFCORE-S3-BUCKET} \
+ParameterKey=VpcId,ParameterValue=$AWS_VPC_ID \
+ParameterKey=SubnetIds,ParameterValue=$AWS_VPC_SUBNET1_ID\\,$AWS_VPC_SUBNET1_ID \
+ParameterKey=S3BucketName,ParameterValue=$AWS-GWFCORE-S3-BUCKET \
 ParameterKey=ExistingBucket,ParameterValue=true \
-ParameterKey=ArtifactBucketName,ParameterValue=${AWS_GWFCORE_ARTIFACT_BUCKET} \
-ParameterKey=ArtifactBucketPrefix,ParameterValue=${AWS_GWFCORE_ARTIFACT_BUCKET_PREFIX}\
-ParameterKey=TemplateRootUrl,ParameterValue=${AWS_GWFCORE_TEMPLATE_ROOT_URL} \
+ParameterKey=ArtifactBucketName,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET \
+ParameterKey=ArtifactBucketPrefix,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET_PREFIX\
+ParameterKey=TemplateRootUrl,ParameterValue=$AWS_GWFCORE_TEMPLATE_ROOT_URL \
 --capabilities CAPABILITY_IAM
 ```
