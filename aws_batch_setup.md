@@ -36,10 +36,7 @@ export AWS-GWFCORE-ARTIFACT-BUCKET-PREFIX=test/artifacts
 export AWS-GWFCORE-TEMPLATE-ROOT-URL=https://emriuom-cloudformation.s3.amazonaws.com/test/templates
 ```
 
-
-Replace the VPC and public subnet ids in the following code with the values you captured previously.
-Replace the s3 bucket name with your bucket name.
-Then run the command in your terminal. 
+Run the following command in your terminal. 
 
 ```
 aws cloudformation create-stack \
