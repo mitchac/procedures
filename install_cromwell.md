@@ -19,7 +19,7 @@ export AWS_CROMWELL_TEMPLATE_URL=https://aws-genomics-workflows.s3.amazonaws.com
 export AWS_CROMWELL_NAMESPACE=cromwell
 export AWS_CROMWELL_GWFCORE_NAMESPACE=gwfcore
 export AWS_CROMWELL_KEYNAME=*******
-export AWS_CROMWELL_DBPASSWORD*******
+export AWS_CROMWELL_DBPASSWORD=*******
 ```
 
 Run the following command in your terminal
