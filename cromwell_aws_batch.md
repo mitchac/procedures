@@ -28,11 +28,9 @@ https://github.com/mitchac/procedures/blob/d8fdc90aa906347f976eada6276e80668655c
 
 https://github.com/mitchac/procedures/blob/2609154bf41b605c52e63dadcd2603666820fd3d/aws_batch_setup.md
 
-
 ### Configure Cromwell-specific changes to AWS batch environment
 
 https://github.com/mitchac/procedures/blob/5fc27ced1567cd74cc402478bdaaa862faf97c86/install_cromwell.md
-
 
 ### Run a test workflow
 
@@ -60,6 +58,7 @@ sudo yum install git -y
 git clone https://github.com/mitchac/wdlhelloworld.git
 cd wdlhelloworld
 git reset cbc0d4c --hard
+cd ..
 ```
 run the workflow with the following command..
 ```
