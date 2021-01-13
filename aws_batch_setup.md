@@ -48,7 +48,7 @@ ParameterKey=SubnetIds,ParameterValue=$AWS_VPC_SUBNET1_ID\\,$AWS_VPC_SUBNET1_ID 
 ParameterKey=S3BucketName,ParameterValue=$AWS-GWFCORE-S3-BUCKET \
 ParameterKey=ExistingBucket,ParameterValue=true \
 ParameterKey=ArtifactBucketName,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET \
-ParameterKey=ArtifactBucketPrefix,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET_PREFIX\
+ParameterKey=ArtifactBucketPrefix,ParameterValue=$AWS_GWFCORE_ARTIFACT_BUCKET_PREFIX \
 ParameterKey=TemplateRootUrl,ParameterValue=$AWS_GWFCORE_TEMPLATE_ROOT_URL \
 --capabilities CAPABILITY_IAM
 ```
