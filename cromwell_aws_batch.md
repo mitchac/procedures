@@ -22,7 +22,7 @@ For additional clarification of the purpose of the following steps it is recomme
 
 ### Create VPC
 
-https://github.com/mitchac/procedures/blob/d8fdc90aa906347f976eada6276e80668655c52b/aws_vpc_setup
+https://github.com/mitchac/procedures/blob/e0564e7912ed4473bbc66b54022cdb043d823860/aws_vpc_setup.md
 
 ### Configure AWS batch environment
 
