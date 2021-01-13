@@ -22,24 +22,7 @@ For additional clarification of the purpose of the following steps it is recomme
 
 ### Create VPC
 
-Run the following command in your terminal
-
-```
-aws cloudformation create-stack \
---stack-name vpcstack \
---template-url  https://aws-quickstart.s3.amazonaws.com/quickstart-aws-vpc/templates/aws-vpc.template \
---parameters \
-ParameterKey=AvailabilityZones,ParameterValue=us-east-1a\\,us-east-1b \
-ParameterKey=CreatePrivateSubnets,ParameterValue=false
-```
-
-Run the following commands to retrieve the identifiers for your VPC and the public subnets
-
-```
-export AWSVPCID=$(aws cloudformation describe-stacks --stack-name vpcstack --query "Stacks[0].Outputs[?OutputKey=='VPCID'].OutputValue" --output text)
-export AWSSUBNET1ID=$(aws cloudformation describe-stacks --stack-name vpcstack --query "Stacks[0].Outputs[?OutputKey=='PublicSubnet1ID'].OutputValue" --output text)
-export AWSSUBNET2ID=$(aws cloudformation describe-stacks --stack-name vpcstack --query "Stacks[0].Outputs[?OutputKey=='PublicSubnet2ID'].OutputValue" --output text)
-```
+https://github.com/mitchac/procedures/blob/d8fdc90aa906347f976eada6276e80668655c52b/aws_vpc_setup
 
 ### Configure AWS batch environment
 
