@@ -57,7 +57,7 @@ sudo yum update -y
 sudo yum install git -y
 git clone https://github.com/mitchac/wdlhelloworld.git
 cd wdlhelloworld
-git reset 4a28ced --hard
+git reset cbc0d4c --hard
 cd ..
 ```
 run the workflow with the following command..
