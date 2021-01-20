@@ -14,30 +14,12 @@ Go to https://console.aws.amazon.com/billing/ and select 'Payment methods' in th
 
 Complete the process to add a credit card. 
 
-### Add a non root user to your account
+### Add an ssh key to your root account
 
-It is recommended to create a non-root user account for day to day use of AWS in order to avoid credentials for your root account falling into the wrong hands.  
+Go to https://console.aws.amazon.com/iam/home?region=us-east-1#/security_credentials
 
-Download the following template file to your computer. This file will automate the creation of your non-root user.
+Click on the 'Access keys' tab
 
-https://github.com/mitchac/cloudformation/blob/2d0ea43abadf8a247ac880da1ebc882d7a12fecb/default-user.template.yaml
+Click on the 'Create new access key' button 
 
-Go to https://console.aws.amazon.com/cloudformation
-
-Click on the 'Create Stack' button and select option 'with new resources'
-
-Select option 'Upload a template file'. 
-
-Click on 'Choose file'.
-
-Select the template file you downloaded previously in the file selection popup. 
-
-Click the Next button
-
-Enter a username and password and click Next
-
-Click Next
-
-At the bottom of the page tick any checkboxes in the 'Capabilities' section to enable the creation of appropriate resources and click 'Create stack' button. 
-
-Make a note of the username, password and the security key details.
+Create an access key and save the key id and key to a safe place. 
