@@ -28,7 +28,7 @@ https://github.com/mitchac/procedures/blob/e0564e7912ed4473bbc66b54022cdb043d823
 
 https://github.com/mitchac/procedures/blob/85ec94a93f5492f6a87eacac067a6776e4ddf039/aws_batch_setup.md
 
-### Configure Cromwell-specific changes to AWS batch environment
+### Install Cromwell
 
 https://github.com/mitchac/procedures/blob/036a3d7a6c98d96c5787f27d0692cd8817a2165d/install_cromwell.md
 
