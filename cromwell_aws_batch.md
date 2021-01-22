@@ -69,6 +69,8 @@ cd wdlhelloworld
 aws s3 cp runlist s3://emriuom-workflow/cromwell_inputs/runlist
 ```
 Run the workflow with the following command..
+
+NB if necessary, modify the path to your input file on s3 in the file hello.json
 ```
 curl -X POST "http://localhost:8000/api/workflows/v1" \
 -H  "accept: application/json" \
