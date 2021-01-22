@@ -60,7 +60,7 @@ cd wdlhelloworld
 git reset cbc0d4c --hard
 cd ..
 ```
-Copy workflow input file to s3 
+Copy workflow input file to s3
 !!complete this step on your main development machine not the Cromwell AWS instance!!
 ```
 git clone https://github.com/mitchac/wdlhelloworld.git
