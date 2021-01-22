@@ -60,6 +60,13 @@ cd wdlhelloworld
 git reset cbc0d4c --hard
 cd ..
 ```
+Copy workflow input file to s3 
+!!complete this step on your main development machine not the Cromwell AWS instance!!
+```
+git clone https://github.com/mitchac/wdlhelloworld.git
+cd wdlhelloworld
+aws s3 cp runlist s3://emriuom-workflow/cromwell_inputs/runlist
+```
 run the workflow with the following command..
 ```
 curl -X POST "http://localhost:8000/api/workflows/v1" \
