@@ -44,46 +44,33 @@ Click on the instance id
 
 Click on the connect tab
 
-Click on the SSH client tab 
+Click on the Session manager tab 
 
-Copy the ssh command from this section and run it in your terminal. This command should look like..
+Click on connect
 
-```
-ssh -i "my_key_name.pem" ec2-user@ec2{my instance ip}.compute-1.amazonaws.com
-```
-Get test wdl script 
+This will lanch a new browser tab with a console on your Cromwell head node 
+
+Install git
 ```
 sudo yum update -y
 sudo yum install git -y
+```
+Get test wdl script 
+```
 git clone https://github.com/mitchac/wdlhelloworld.git
 cd wdlhelloworld
-git reset cbc0d4c --hard
+git reset eb6cf52 --hard
 cd ..
 ```
-Copy workflow input file to s3
-
-NB complete this step on your main development machine not the Cromwell AWS instance
-```
-git clone https://github.com/mitchac/wdlhelloworld.git
-cd wdlhelloworld
-aws s3 cp runlist s3://emriuom-workflow/cromwell_inputs/runlist
-```
-Run the workflow with the following command..
-
-NB if necessary, modify the path to your input file on s3 in the file hello.json
+Run test workflow script
 ```
 curl -X POST "http://localhost:8000/api/workflows/v1" \
--H  "accept: application/json" \
--F "workflowSource=@wdlhelloworld/hello.wdl" \
--F "workflowInputs=@wdlhelloworld/hello.json" \
--F "workflowOptions=@wdlhelloworld/options.json"
+    -H  "accept: application/json" \
+    -F "workflowSource=@wdlhelloworld/simple-hello.wdl"
 ```
 You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
 
 https://console.aws.amazon.com/batch/v2/home?region=us-east-1#dashboard
-
-after a few minute you should see execution outputs in 
-https://s3.console.aws.amazon.com/s3/buckets/emriuom?region=us-east-1&prefix=cromwell-execution/hello/&showversions=false
 
 nb nothing is logged to cloudwatch in this particular workflow.
 
