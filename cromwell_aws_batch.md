@@ -55,7 +55,8 @@ Install git
 sudo yum update -y
 sudo yum install git -y
 ```
-Get test wdl script 
+Get test wdl script. 
+The following is adapted from https://docs.opendata.aws/genomics-workflows/orchestration/cromwell/cromwell-examples/. 
 ```
 git clone https://github.com/mitchac/wdlhelloworld.git
 cd wdlhelloworld
@@ -68,11 +69,13 @@ curl -X POST "http://localhost:8000/api/workflows/v1" \
     -H  "accept: application/json" \
     -F "workflowSource=@wdlhelloworld/simple-hello.wdl"
 ```
-You can monitor the progress of your job by going to the AWS batch dashboard at the following link.
+The workflow may take 5-10 minutes to complete. You can monitor the progress of your job by going to the AWS batch dashboard at the following link. 
 
 https://console.aws.amazon.com/batch/v2/home?region=us-east-1#dashboard
 
-nb nothing is logged to cloudwatch in this particular workflow.
+You can find the relevant cromwell server logs at the following location. 
+
+https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logsV2:log-groups/log-group/cromwell-server
 
 ### notes
 make sure do all in single zone 
