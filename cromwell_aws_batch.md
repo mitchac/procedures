@@ -30,7 +30,7 @@ https://github.com/mitchac/procedures/blob/85ec94a93f5492f6a87eacac067a6776e4ddf
 
 ### Install Cromwell
 
-https://github.com/mitchac/procedures/blob/036a3d7a6c98d96c5787f27d0692cd8817a2165d/install_cromwell.md
+https://github.com/mitchac/procedures/blob/af1b65a0647fdb91655b9a9b10c1a86510c4fa69/install_cromwell.md
 
 ### Run a test workflow
 
